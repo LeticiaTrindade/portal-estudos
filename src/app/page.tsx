@@ -1,6 +1,4 @@
 // src/pages/index.tsx
-import Layout from "./layout";
-
 export default function Home() {
   return (
     <>
