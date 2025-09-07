@@ -1,5 +1,5 @@
 // src/tutoriais/html/tutorial1.tsx
-import CodeBlock from "@/app/components/codeBlock";
+import CodeBlock from "@/app/components/codeBlock/index";
 
 export default function Tutorial1() {
   return (
