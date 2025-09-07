@@ -1,4 +1,5 @@
 // src/tutoriais/html/tutorial1.tsx
+/* eslint-disable react/no-unescaped-entities */
 import CodeBlock from "@/app/components/codeBlock/index";
 
 export default function Tutorial1() {
@@ -116,7 +117,7 @@ export default function Tutorial1() {
   <body>
     <h1>Bem-vindo ao meu site!</h1>
     <p>Este é um parágrafo de exemplo.</p>
-    <a href=&quot;https://www.google.com&quot; target=&quot;_blank&quot;>Visite o Google</a>
+    <a href=https://www.google.com" target="_blank">Visite o Google</a>
   </body>
 </html>`}
          </CodeBlock>
