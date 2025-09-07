@@ -3,7 +3,7 @@ type ContentItem = {
   id: number;
   title: string;
   description: string;
-  level: "Iniciante" | "Intermediário" | "Avançado";
+  level: string;
   link: string;
 };
 
