@@ -4,7 +4,7 @@ type ContentItem = {
   title: string;
   description: string;
   level: string;
-  link: string;
+  link?: string;
 };
 
 type ContentGridProps = {
@@ -31,7 +31,7 @@ export default function ContentGrid({ items }: ContentGridProps) {
       {items.map((item) => (
         <a
           key={item.id}
-          href={item.link}
+          href={item.link ?? "#"}
           target="_blank"
           rel="noopener noreferrer"
           className="hover:cursor-pointer group block bg-secondary border border-pink-500/20 rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow transition-all duration-300"
