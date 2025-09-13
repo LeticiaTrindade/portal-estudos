@@ -2,8 +2,8 @@
 "use client";
 
 import { useState } from "react";
-import Sidebar from "@/app/components/sidebar";
-import ContentGrid from "@/app/components/contentGrid";
+import Sidebar from "@/components/sidebar";
+import ContentGrid from "@/components/contentGrid";
 
 const tutorials = [
 // 🟢 Iniciante
@@ -139,7 +139,7 @@ export default function TutoriaisPage() {
       <Sidebar onSearch={handleSearch} />
 
       <div className="mx-auto">
-        <h1 className="text-4xl font-bold text-primary mb-8 text-center">
+        <h1 className="text-4xl font-bold text-primary p-10 text-center">
           Tutoriais
         </h1>
         <ContentGrid items={filteredItems} />

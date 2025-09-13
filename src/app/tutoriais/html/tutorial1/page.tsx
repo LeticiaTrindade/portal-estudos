@@ -1,7 +1,7 @@
 // src/tutoriais/html/tutorial1.tsx
 /* eslint-disable react/no-unescaped-entities */
-import CodeBlock from "@/app/components/codeBlock/index";
-import CodePlayground from "@/app/components/codePlayground";
+import CodeBlock from "@/components/codeBlock/index";
+import CodePlayground from "@/components/codePlayground";
 
 export default function Tutorial1() {
   return (
