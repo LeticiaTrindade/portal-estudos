@@ -2,8 +2,8 @@
 "use client";
 
 import { useState } from "react";
-import Sidebar from "@/app/components/sidebar";
-import ContentGrid from "@/app/components/contentGrid";
+import Sidebar from "@/components/sidebar";
+import ContentGrid from "@/components/contentGrid";
 
 const tutorials = [
 // 🟢 Iniciante
