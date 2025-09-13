@@ -74,12 +74,12 @@ export default function ExerciciosPage() {
     setFilteredItems(results);
   };
 
-  return (
+   return (
     <section className="max-w-6xl mx-auto px-6 py-12">
       <Sidebar onSearch={handleSearch} />
 
       <div className="mx-auto">
-        <h1 className="text-4xl font-bold text-primary mb-8 text-center">
+        <h1 className="p-10 text-4xl font-bold text-primary text-center  ">
           Exercícios
         </h1>
         <ContentGrid items={filteredItems} />

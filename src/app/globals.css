@@ -574,14 +574,14 @@ video {
   top: 0.75rem;
 }
 
-.mx-2 {
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
-}
-
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
+}
+
+.my-6 {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .mb-2 {
@@ -649,6 +649,10 @@ video {
   height: 100%;
 }
 
+.max-h-\[600px\] {
+  max-height: 600px;
+}
+
 .min-h-\[70vh\] {
   min-height: 70vh;
 }
@@ -679,6 +683,10 @@ video {
 
 .border-collapse {
   border-collapse: collapse;
+}
+
+.resize-none {
+  resize: none;
 }
 
 .list-inside {
@@ -729,6 +737,12 @@ video {
   --tw-space-y-reverse: 0;
   margin-top: calc(0.25rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(0.25rem * var(--tw-space-y-reverse));
+}
+
+.space-y-12 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(3rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(3rem * var(--tw-space-y-reverse));
 }
 
 .space-y-2 > :not([hidden]) ~ :not([hidden]) {
@@ -787,6 +801,10 @@ video {
   border-color: rgb(55 65 81 / var(--tw-border-opacity, 1));
 }
 
+.border-gray-700\/30 {
+  border-color: rgb(55 65 81 / 0.3);
+}
+
 .border-pink-500\/20 {
   border-color: rgb(236 72 153 / 0.2);
 }
@@ -795,14 +813,14 @@ video {
   border-color: rgb(236 72 153 / 0.3);
 }
 
-.bg-background {
+.bg-\[\#141a27\] {
   --tw-bg-opacity: 1;
   background-color: rgb(20 26 39 / var(--tw-bg-opacity, 1));
 }
 
-.bg-background-alt {
+.bg-background {
   --tw-bg-opacity: 1;
-  background-color: rgb(26 34 56 / var(--tw-bg-opacity, 1));
+  background-color: rgb(20 26 39 / var(--tw-bg-opacity, 1));
 }
 
 .bg-green-500 {
@@ -826,6 +844,11 @@ video {
 .bg-secondary {
   --tw-bg-opacity: 1;
   background-color: rgb(253 248 248 / var(--tw-bg-opacity, 1));
+}
+
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
 }
 
 .bg-yellow-500 {
@@ -870,8 +893,16 @@ video {
   --tw-gradient-to: #2a2a40 var(--tw-gradient-to-position);
 }
 
+.p-10 {
+  padding: 2.5rem;
+}
+
 .p-2 {
   padding: 0.5rem;
+}
+
+.p-4 {
+  padding: 1rem;
 }
 
 .p-5 {
@@ -935,6 +966,11 @@ video {
   line-height: 2rem;
 }
 
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
 .text-4xl {
   font-size: 2.25rem;
   line-height: 2.5rem;
@@ -986,6 +1022,11 @@ video {
   color: rgb(243 244 246 / var(--tw-text-opacity, 1));
 }
 
+.text-gray-300 {
+  --tw-text-opacity: 1;
+  color: rgb(209 213 219 / var(--tw-text-opacity, 1));
+}
+
 .text-gray-400 {
   --tw-text-opacity: 1;
   color: rgb(156 163 175 / var(--tw-text-opacity, 1));
@@ -994,6 +1035,11 @@ video {
 .text-green-400 {
   --tw-text-opacity: 1;
   color: rgb(74 222 128 / var(--tw-text-opacity, 1));
+}
+
+.text-pink-400 {
+  --tw-text-opacity: 1;
+  color: rgb(244 114 182 / var(--tw-text-opacity, 1));
 }
 
 .text-primary {
@@ -1027,10 +1073,21 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.shadow-inner {
+  --tw-shadow: inset 0 2px 4px 0 rgb(0 0 0 / 0.05);
+  --tw-shadow-colored: inset 0 2px 4px 0 var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
 .shadow-md {
   --tw-shadow: 0 4px 6px rgba(0,0,0,0.25);
   --tw-shadow-colored: 0 4px 6px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.outline-none {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
 }
 
 .filter {
@@ -1079,10 +1136,8 @@ video {
   color: rgb(176 43 99 / var(--tw-text-opacity, 1));
 }
 
-.hover\:shadow-glow:hover {
-  --tw-shadow: 0 0 20px rgba(252,56,131,0.5);
-  --tw-shadow-colored: 0 0 20px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+.hover\:underline:hover {
+  text-decoration-line: underline;
 }
 
 .hover\:shadow-lg:hover {
@@ -1138,7 +1193,7 @@ video {
 }
 
 @media (min-width: 1280px) {
-  .xl\:grid-cols-4 {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+  .xl\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }

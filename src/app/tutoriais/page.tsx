@@ -139,7 +139,7 @@ export default function TutoriaisPage() {
       <Sidebar onSearch={handleSearch} />
 
       <div className="mx-auto">
-        <h1 className="text-4xl font-bold text-primary mb-8 text-center">
+        <h1 className="text-4xl font-bold text-primary p-10 text-center">
           Tutoriais
         </h1>
         <ContentGrid items={filteredItems} />
