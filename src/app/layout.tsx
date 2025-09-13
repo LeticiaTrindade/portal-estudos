@@ -1,5 +1,5 @@
-import Header from "./components/header";
-import Footer from "./components/footer";
+import Header from "../components/header";
+import Footer from "../components/footer";
 import "./globals.css"; // Certifique-se de que o CSS global está importado aqui
 
 type RootLayoutProps = {
