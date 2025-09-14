@@ -32,7 +32,7 @@ content: [
         text: {
           light: "#fdf8f8",
           dark: "#141a27",
-          muted: "#a0a0b0",
+          muted: "#c2c2ccff",
         },
 
         // 🎨 Paleta para CodeBlock
