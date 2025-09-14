@@ -5,7 +5,7 @@ export default function Footer() {
     <footer className="bg-background text-secondary py-6 mt-12">
       <div className="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-4">
         <p className="text-sm">
-          &copy; {new Date().getFullYear()} LellyCoder. Todos os direitos reservados.
+          &copy; {new Date().getFullYear()} LellyCodeLab. Todos os direitos reservados.
         </p>
         <div className="flex gap-4">
           <a
