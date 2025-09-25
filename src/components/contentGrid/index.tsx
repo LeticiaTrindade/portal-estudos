@@ -1,4 +1,3 @@
-// src/components/contentGrid/index.tsx
 type ContentItem = {
   id: number;
   title: string;
@@ -14,16 +13,17 @@ type ContentGridProps = {
 export default function ContentGrid({ items }: ContentGridProps) {
   if (items.length === 0) {
     return (
-      <p className="text-text-muted text-center">
+      <p className="text-ink-muted text-center">
         Nenhum item encontrado.
       </p>
     );
   }
 
+  // Cores harmonizadas com o novo tema
   const levelColors: Record<ContentItem["level"], string> = {
-    Iniciante: "bg-green-500/20 text-green-400",
-    Intermediário: "bg-yellow-500/20 text-yellow-400",
-    Avançado: "bg-red-500/20 text-red-400",
+    Iniciante: "bg-[#E7F7F1] text-[#0EA47A]",           // verde suave
+    Intermediário: "bg-[#E9F0FB] text-support-blue",     // azul desaturado
+    Avançado: "bg-[#FDECF1] text-brand-strong",          // rosa/berry
   };
 
   return (
@@ -32,16 +32,16 @@ export default function ContentGrid({ items }: ContentGridProps) {
         <a
           key={item.id}
           href={item.link ?? "#"}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="hover:cursor-pointer group block bg-background-alt border border-pink-500/20 rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow transition-all duration-300"
+          target={item.link ? "_blank" : undefined}
+          rel={item.link ? "noopener noreferrer" : undefined}
+          className="group block bg-surface-alt border border-surface-subtle rounded-xl p-6 shadow-card hover:shadow-cardHover transition focus-soft"
         >
           <div className="flex flex-col justify-between h-full">
             <div>
-              <h2 className="text-primary font-bold text-lg mb-2 group-hover:text-primary-light transition-colors">
+              <h2 className="text-brand font-semibold text-lg mb-2 group-hover:opacity-90 transition-opacity">
                 {item.title}
               </h2>
-              <p className="text-text-muted text-sm mb-4">
+              <p className="text-ink-muted text-sm mb-4">
                 {item.description}
               </p>
             </div>

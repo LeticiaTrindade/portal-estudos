@@ -1,4 +1,3 @@
-// src/pages/tutoriais/page.tsx
 "use client";
 
 import { useState } from "react";
@@ -136,12 +135,20 @@ export default function TutoriaisPage() {
 
   return (
     <section className="max-w-6xl mx-auto px-6 py-12">
+      {/* Barra lateral pode seguir clara também */}
       <Sidebar onSearch={handleSearch} />
 
       <div className="mx-auto">
-        <h1 className="text-4xl font-bold text-primary p-10 text-center">
+        <h1 className="text-4xl md:text-5xl font-extrabold text-brand tracking-tight text-center mb-6 pt-8">
           Tutoriais
         </h1>
+
+        {/* Filtro/descrição opcional */}
+        <p className="text-ink-muted text-center mb-8 prose-relaxed">
+          Explore conteúdos do nível iniciante ao avançado no seu ritmo.
+        </p>
+
+        {/* ContentGrid deve usar cartões claros (bg-surface-alt/white + sombras suaves) */}
         <ContentGrid items={filteredItems} />
       </div>
     </section>
