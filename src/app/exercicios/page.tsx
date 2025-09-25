@@ -1,4 +1,3 @@
-// src/pages/exercicios/page.tsx
 "use client";
 
 import { useState } from "react";
@@ -74,14 +73,18 @@ export default function ExerciciosPage() {
     setFilteredItems(results);
   };
 
-   return (
+  return (
     <section className="max-w-6xl mx-auto px-6 py-12">
       <Sidebar onSearch={handleSearch} />
 
       <div className="mx-auto">
-        <h1 className="p-10 text-4xl font-bold text-primary text-center  ">
+        <h1 className="text-4xl md:text-5xl font-extrabold text-brand tracking-tight text-center mb-6 pt-8">
           Exercícios
         </h1>
+        <p className="text-ink-muted text-center mb-8 prose-relaxed">
+          Pratique o que aprendeu com desafios guiados por níveis.
+        </p>
+
         <ContentGrid items={filteredItems} />
       </div>
     </section>

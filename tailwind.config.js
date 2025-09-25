@@ -1,52 +1,49 @@
+// tailwind.config.js
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-content: [
-    "./app/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/**/*.{js,ts,jsx,tsx,mdx}", 
-  ],
+  content: ["./app/**/*.{js,ts,jsx,tsx,mdx}", "./src/**/*.{js,ts,jsx,tsx,mdx}"],
   theme: {
     extend: {
       colors: {
-        primary: {
-          DEFAULT: "#fc3883",
-          light: "#ff74ab",
-          dark: "#b02b63",
+        brand: {
+          // Rosa principal (suave)
+          DEFAULT: "#E85D88",
+          soft: "#F7A1BD",
+          strong: "#C84B74",
         },
-        secondary: {
-          DEFAULT: "#fdf8f8",
-          light: "#ffffff",
-          dark: "#cfc9c9",
+        surface: {
+          // Fundos claros e cartões
+          DEFAULT: "#FAF7FA",
+          alt: "#FFFFFF",
+          subtle: "#F3EFF4",
         },
-        background: {
-          DEFAULT: "#141a27",
-          light: "#1c2340",
-          alt: "#1a2238",
+        ink: {
+          // Texto
+          DEFAULT: "#253041",
+          muted: "#5B6678",
+          faint: "#8C95A5",
         },
-        accent: {
-          yellow: "#ffd166",
-          blue: "#3a86ff",
-          green: "#06d6a0",
-          red: "#ef476f",
-          purple: "#9b5de5",
+        // Azul de apoio (desaturado)
+        support: {
+          blue: "#6E8ECF",
         },
-        text: {
-          light: "#fdf8f8",
-          dark: "#141a27",
-          muted: "#c2c2ccff",
+        // Estado/foco/acessibilidade
+        state: {
+          success: "#0EA47A",
+          warning: "#E2B351",
+          danger: "#E35A78",
+          focus: "#CF4F7D",
         },
 
-        // 🎨 Paleta para CodeBlock
+        // Tema escuro apenas para blocos de código
         code: {
-          bg: "#0f0f1c", // fundo escuro
-          gradientFrom: "#1e1e2e",
-          gradientVia: "#2a2a40",
-          gradientTo: "#3a3a5a",
-          border: "#fc3883", // rosa neon
-          keyword: "#fc3883", // rosa
-          string: "#06d6a0", // verde
-          function: "#3a86ff", // azul
-          number: "#ffd166", // amarelo
-          comment: "#a0a0b0", // cinza claro
+          bg: "#121420",
+          border: "#E85D88",
+          keyword: "#E85D88",
+          string: "#23C79A",
+          fn: "#6E8ECF",
+          number: "#E2B351",
+          comment: "#9AA3B2",
         },
       },
 
@@ -56,38 +53,31 @@ content: [
       },
 
       borderRadius: {
-        lg: "12px",
-        xl: "16px",
-        "2xl": "20px",
+        lg: "14px",
+        xl: "18px",
+        "2xl": "22px",
       },
 
       boxShadow: {
-        md: "0 4px 6px rgba(0,0,0,0.25)",
-        lg: "0 10px 20px rgba(0,0,0,0.35)",
-        glow: "0 0 20px rgba(252,56,131,0.5)", // brilho rosa neon
-        "glow-blue": "0 0 20px rgba(58,134,255,0.4)", // brilho azul
-        "glow-green": "0 0 20px rgba(6,214,160,0.4)", // brilho verde
+        card: "0 8px 30px rgba(20, 24, 40, 0.06)",
+        cardHover: "0 10px 38px rgba(20, 24, 40, 0.10)",
+        focus: "0 0 0 4px rgba(232, 93, 136, 0.20)",
       },
 
       backgroundImage: {
-        "gradient-primary": "linear-gradient(90deg, #fc3883, #ff74ab)",
-        "gradient-code":
-          "linear-gradient(to bottom right, #0f0f1c, #1e1e2e, #2a2a40, #3a3a5a)",
+        "hero-warm":
+          "radial-gradient(1200px 600px at 20% 0%, rgba(232,93,136,0.10), transparent), radial-gradient(1200px 600px at 80% 0%, rgba(110,142,207,0.10), transparent)",
       },
 
       animation: {
-        "fade-in": "fadeIn 0.3s ease-in-out",
-        "pulse-glow": "pulseGlow 1.5s infinite alternate",
+        "fade-in": "fadeIn 240ms ease-out",
+        "scale-in": "scaleIn 160ms ease-out",
       },
-
       keyframes: {
-        fadeIn: {
-          "0%": { opacity: 0 },
-          "100%": { opacity: 1 },
-        },
-        pulseGlow: {
-          "0%": { boxShadow: "0 0 10px rgba(252,56,131,0.4)" },
-          "100%": { boxShadow: "0 0 20px rgba(252,56,131,0.8)" },
+        fadeIn: { "0%": { opacity: 0 }, "100%": { opacity: 1 } },
+        scaleIn: {
+          "0%": { opacity: 0, transform: "scale(0.98)" },
+          "100%": { opacity: 1, transform: "scale(1)" },
         },
       },
     },
