@@ -1,4 +1,3 @@
-// src/pages/exercicios/html/exercicio1/page.tsx
 "use client";
 
 import { useState } from "react";
@@ -112,25 +111,28 @@ export default function Exercicio1Page() {
 
   return (
     <section className="max-w-6xl mx-auto px-6 py-12">
-      <h1 className="text-3xl font-bold text-primary mb-8 text-center">
+      <h1 className="text-3xl md:text-4xl font-extrabold text-brand mb-8 text-center tracking-tight">
         Exercícios: Estrutura básica do HTML
       </h1>
 
       <div className="space-y-12">
         {exercicios.map((ex) => (
-          <div key={ex.id} className="bg-background-alt p-6 border border-gray-700/30 rounded-xl">
-            <h2 className="text-xl font-semibold mb-2 text-pink-400">
+          <div
+            key={ex.id}
+            className="bg-surface-alt p-6 border border-surface-subtle rounded-xl shadow-card"
+          >
+            <h2 className="text-xl font-semibold mb-2 text-brand">
               {ex.title}
             </h2>
-            <p className="text-gray-300 mb-4">{ex.description}</p>
+            <p className="text-ink-muted mb-4">{ex.description}</p>
 
-            {/* Playground do aluno */}
+            {/* Playground do aluno (tema escuro local do componente) */}
             <CodePlayground code={ex.starterCode} language="html" />
 
-            {/* Botão de solução */}
+            {/* Botão de solução com foco visível suave */}
             <button
               onClick={() => toggleSolution(ex.id)}
-              className="mt-4 flex items-center gap-2 text-sm text-primary hover:underline"
+              className="mt-4 inline-flex items-center gap-2 text-sm text-brand hover:opacity-90 transition focus-soft rounded-md px-1 py-1"
             >
               {openSolutions.includes(ex.id) ? (
                 <>

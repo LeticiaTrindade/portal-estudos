@@ -1,47 +1,61 @@
-// src/pages/index.tsx
 export default function Home() {
   return (
     <>
-      <section className="flex flex-col items-center justify-center min-h-[70vh] text-center px-6 bg-background">
-        <h1 className="text-4xl md:text-5xl font-bold text-primary mb-4">
+      <section className="flex flex-col items-center justify-center min-h-[68vh] text-center px-6 bg-surface hero-warm">
+        <h1 className="text-4xl md:text-5xl font-extrabold text-brand mb-3 tracking-tight">
           Bem-vindo ao Portal de Estudos
         </h1>
-        <p className="text-lg text-secondary max-w-2xl">
+        <p className="text-lg md:text-xl text-ink-muted max-w-2xl prose-relaxed">
           Explore tutoriais, exemplos práticos e exercícios para aprender
           programação de forma clara e objetiva.
         </p>
+        <div className="mt-8 flex gap-3">
+          <a
+            href="/tutoriais"
+            className="px-5 py-3 rounded-xl bg-brand text-white shadow-card hover:shadow-cardHover transition focus-soft"
+          >
+            Começar agora
+          </a>
+          <a
+            href="/sobre"
+            className="px-5 py-3 rounded-xl bg-surface-alt text-ink hover:bg-surface-subtle shadow-card transition focus-soft border border-surface-subtle"
+          >
+            Sobre o projeto
+          </a>
+        </div>
       </section>
 
-      {/* Seções adicionais podem ser adicionadas aqui */}
       <section className="max-w-6xl mx-auto px-6 py-12">
-        <h2 className="text-2xl font-semibold text-primary mb-6">O que você encontrará:</h2>
+        <h2 className="text-2xl font-semibold text-ink mb-6">
+          O que você encontrará:
+        </h2>
         <div className="grid md:grid-cols-3 gap-6">
-          <a href="/tutoriais">
-            <div className="bg-secondary rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow">
-              <h3 className="text-primary font-bold mb-2">Tutoriais</h3>
-              <p className="text-background">
+          <a href="/tutoriais" className="group">
+            <div className="bg-surface-alt rounded-xl p-6 shadow-card group-hover:shadow-cardHover transition">
+              <h3 className="text-brand font-bold mb-2">Tutoriais</h3>
+              <p className="text-ink-muted">
                 Aulas passo a passo para iniciantes em programação, com exemplos claros.
               </p>
             </div>
           </a>
-          <a href="/exemplos">
-            <div className="bg-secondary rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow">
-              <h3 className="text-primary font-bold mb-2">Exemplos</h3>
-              <p className="text-background">
+          <a href="/exemplos" className="group">
+            <div className="bg-surface-alt rounded-xl p-6 shadow-card group-hover:shadow-cardHover transition">
+              <h3 className="text-brand font-bold mb-2">Exemplos</h3>
+              <p className="text-ink-muted">
                 Trechos de código e demonstrações práticas para aprendizado rápido.
               </p>
             </div>
           </a>
-          <a href="/exercicios">
-            <div className="bg-secondary rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow">
-              <h3 className="text-primary font-bold mb-2">Exercícios</h3>
-              <p className="text-background">
+          <a href="/exercicios" className="group">
+            <div className="bg-surface-alt rounded-xl p-6 shadow-card group-hover:shadow-cardHover transition">
+              <h3 className="text-brand font-bold mb-2">Exercícios</h3>
+              <p className="text-ink-muted">
                 Quizzes e exercícios interativos para fixar o conteúdo estudado.
               </p>
             </div>
           </a>
         </div>
-      </section >
+      </section>
     </>
   );
 }

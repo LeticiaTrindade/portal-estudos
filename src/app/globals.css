@@ -5,3 +5,16 @@
 body{
   background-color: rgb(244, 242, 255);;
 }
+
+:root {
+  --ring: rgba(232,93,136,0.35);
+}
+.focus-soft:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 4px var(--ring);
+  border-color: #E85D88;
+  transition: box-shadow .15s ease;
+}
+.prose-relaxed {
+  line-height: 1.7;
+}
