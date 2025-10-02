@@ -119,12 +119,12 @@ export default function Exercicio1Page() {
         {exercicios.map((ex) => (
           <div
             key={ex.id}
-            className="bg-surface-alt p-6 border border-surface-subtle rounded-xl shadow-card"
+            className="bg-surface-alt dark:bg-surface-darkAlt dark:border-transparent p-6 border border-surface-subtle rounded-xl shadow-card"
           >
             <h2 className="text-xl font-semibold mb-2 text-brand">
               {ex.title}
             </h2>
-            <p className="text-ink-muted mb-4">{ex.description}</p>
+            <p className="text-ink-muted mb-4 dark:text-ink-dark">{ex.description}</p>
 
             {/* Playground do aluno (tema escuro local do componente) */}
             <CodePlayground code={ex.starterCode} language="html" />

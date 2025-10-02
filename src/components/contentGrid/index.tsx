@@ -20,10 +20,10 @@ export default function ContentGrid({ items }: ContentGridProps) {
   }
 
   // Cores harmonizadas com o novo tema
-  const levelColors: Record<ContentItem["level"], string> = {
-    Iniciante: "bg-[#E7F7F1] text-[#0EA47A]",           // verde suave
-    Intermediário: "bg-[#E9F0FB] text-support-blue",     // azul desaturado
-    Avançado: "bg-[#FDECF1] text-brand-strong",          // rosa/berry
+  const levelClasses: Record<ContentItem["level"], string> = {
+     Iniciante: "bg-[--badge-iniciante-bg] text-[--badge-iniciante-fg]",
+  Intermediário: "bg-[--badge-intermediario-bg] text-[--badge-intermediario-fg]",
+  Avançado: "bg-[--badge-avancado-bg] text-[--badge-avancado-fg]",
   };
 
   return (
@@ -34,20 +34,20 @@ export default function ContentGrid({ items }: ContentGridProps) {
           href={item.link ?? "#"}
           target={item.link ? "_blank" : undefined}
           rel={item.link ? "noopener noreferrer" : undefined}
-          className="group block bg-surface-alt border border-surface-subtle rounded-xl p-6 shadow-card hover:shadow-cardHover transition focus-soft"
+          className="group block bg-surface-alt dark:bg-surface-darkAlt dark:border-transparent border border-surface-subtle rounded-xl p-6 shadow-card hover:shadow-cardHover transition focus-soft"
         >
           <div className="flex flex-col justify-between h-full">
             <div>
               <h2 className="text-brand font-semibold text-lg mb-2 group-hover:opacity-90 transition-opacity">
                 {item.title}
               </h2>
-              <p className="text-ink-muted text-sm mb-4">
+              <p className="dark:text-ink-dark text-ink-muted text-sm mb-4">
                 {item.description}
               </p>
             </div>
 
             <span
-              className={`self-start px-3 py-1 rounded-full text-xs font-medium ${levelColors[item.level]}`}
+              className={`self-start px-3 py-1 rounded-full text-xs font-medium ${levelClasses[item.level]}`}
             >
               {item.level}
             </span>
