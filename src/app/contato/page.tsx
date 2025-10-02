@@ -60,7 +60,7 @@ export default function ContatoPage() {
         <h1 className="text-4xl md:text-5xl font-extrabold text-brand tracking-tight mb-2">
           Contato
         </h1>
-        <p className="text-ink-muted prose-relaxed">
+        <p className="text-ink-muted prose-relaxed text-center mb-8 dark:text-ink-dark">
           Dúvidas, sugestões ou parcerias? Envie uma mensagem. Respostas chegam o quanto antes.
         </p>
       </header>
@@ -68,8 +68,8 @@ export default function ContatoPage() {
       <div className="grid md:grid-cols-5 gap-8">
         {/* Cartões de contato rápido */}
         <aside className="md:col-span-2 space-y-4">
-          <div className="bg-surface-alt border border-surface-subtle rounded-xl p-5 shadow-card">
-            <h2 className="text-lg font-semibold text-ink mb-1">E-mail</h2>
+          <div className="bg-surface-alt dark:bg-surface-darkAlt dark:border-transparent border border-surface-subtle rounded-xl p-5 shadow-card">
+            <h2 className="text-lg font-semibold text-ink dark:text-ink-dark mb-1">E-mail</h2>
             <a
               href="mailto:leticia.trindade@ufrpe.br"
               className="text-brand hover:opacity-90 focus-soft rounded-md px-1 py-1 inline-block"
@@ -78,8 +78,8 @@ export default function ContatoPage() {
             </a>
           </div>
 
-          <div className="bg-surface-alt border border-surface-subtle rounded-xl p-5 shadow-card">
-            <h2 className="text-lg font-semibold text-ink mb-1">GitHub</h2>
+          <div className="bg-surface-alt dark:bg-surface-darkAlt dark:border-transparent border border-surface-subtle rounded-xl p-5 shadow-card">
+            <h2 className="text-lg font-semibold text-ink dark:text-ink-dark mb-1">GitHub</h2>
             <a
               href="https://github.com/leticiatrindade"
               target="_blank"
@@ -90,8 +90,8 @@ export default function ContatoPage() {
             </a>
           </div>
 
-          <div className="bg-surface-alt border border-surface-subtle rounded-xl p-5 shadow-card">
-            <h2 className="text-lg font-semibold text-ink mb-1">LinkedIn</h2>
+          <div className="bg-surface-alt dark:bg-surface-darkAlt dark:border-transparent border border-surface-subtle rounded-xl p-5 shadow-card">
+            <h2 className="text-lg font-semibold text-ink dark:text-ink-dark mb-1">LinkedIn</h2>
             <a
               href="https://linkedin.com/in/leticiatrindadett"
               target="_blank"
@@ -106,10 +106,10 @@ export default function ContatoPage() {
         {/* Formulário */}
         <form
           onSubmit={onSubmit}
-          className="md:col-span-3 bg-surface-alt border border-surface-subtle rounded-xl p-6 shadow-card space-y-4"
+          className="md:col-span-3 bg-surface-alt dark:bg-surface-darkAlt dark:border-transparent border border-surface-subtle rounded-xl p-6 shadow-card space-y-4"
         >
           <div>
-            <label htmlFor="nome" className="block text-sm font-medium text-ink mb-1">
+            <label htmlFor="nome" className="block text-sm font-medium text-ink dark:text-ink-dark mb-1">
               Nome
             </label>
             <input
@@ -117,14 +117,14 @@ export default function ContatoPage() {
               type="text"
               value={data.nome}
               onChange={onChange("nome")}
-              className="w-full rounded-md border border-surface-subtle bg-white text-ink placeholder:text-ink-muted px-3 py-2 focus-soft"
+              className="w-full rounded-md border border-surface-subtle bg-white dark:bg-surface-dark dark:border-transparent text-ink dark:text-ink-dark placeholder:text-ink-muted px-3 py-2 focus-soft"
               placeholder="Seu nome"
               required
             />
           </div>
 
           <div>
-            <label htmlFor="email" className="block text-sm font-medium text-ink mb-1">
+            <label htmlFor="email" className="block text-sm font-medium text-ink dark:text-ink-dark mb-1">
               E-mail
             </label>
             <input
@@ -132,14 +132,14 @@ export default function ContatoPage() {
               type="email"
               value={data.email}
               onChange={onChange("email")}
-              className="w-full rounded-md border border-surface-subtle bg-white text-ink placeholder:text-ink-muted px-3 py-2 focus-soft"
+              className="w-full rounded-md border border-surface-subtle bg-white dark:bg-surface-dark dark:border-transparent text-ink dark:text-ink-dark placeholder:text-ink-muted px-3 py-2 focus-soft"
               placeholder="voce@exemplo.com"
               required
             />
           </div>
 
           <div>
-            <label htmlFor="assunto" className="block text-sm font-medium text-ink mb-1">
+            <label htmlFor="assunto" className="block text-sm font-medium text-ink dark:text-ink-dark mb-1">
               Assunto (opcional)
             </label>
             <input
@@ -147,20 +147,20 @@ export default function ContatoPage() {
               type="text"
               value={data.assunto}
               onChange={onChange("assunto")}
-              className="w-full rounded-md border border-surface-subtle bg-white text-ink placeholder:text-ink-muted px-3 py-2 focus-soft"
+              className="w-full rounded-md border border-surface-subtle bg-white dark:bg-surface-dark dark:border-transparent text-ink dark:text-ink-dark placeholder:text-ink-muted px-3 py-2 focus-soft"
               placeholder="Sobre o que gostaria de falar?"
             />
           </div>
 
           <div>
-            <label htmlFor="mensagem" className="block text-sm font-medium text-ink mb-1">
+            <label htmlFor="mensagem" className="block text-sm font-medium text-ink dark:text-ink-dark mb-1">
               Mensagem
             </label>
             <textarea
               id="mensagem"
               value={data.mensagem}
               onChange={onChange("mensagem")}
-              className="w-full min-h-[140px] rounded-md border border-surface-subtle bg-white text-ink placeholder:text-ink-muted px-3 py-2 focus-soft"
+              className="w-full min-h-[140px] rounded-md border border-surface-subtle bg-white dark:bg-surface-dark dark:border-transparent text-ink dark:text-ink-dark placeholder:text-ink-muted px-3 py-2 focus-soft"
               placeholder="Escreva sua mensagem..."
               required
             />
@@ -176,7 +176,7 @@ export default function ContatoPage() {
             </button>
 
             {status === "success" && (
-              <span className="text-sm text-ink">Mensagem enviada com sucesso!</span>
+              <span className="text-sm text-green-700 dark:text-green-500 ">Mensagem enviada com sucesso!</span>
             )}
             {status === "error" && (
               <span className="text-sm text-brand-strong">

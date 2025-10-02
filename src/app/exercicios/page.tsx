@@ -81,7 +81,7 @@ export default function ExerciciosPage() {
         <h1 className="text-4xl md:text-5xl font-extrabold text-brand tracking-tight text-center mb-6 pt-8">
           Exercícios
         </h1>
-        <p className="text-ink-muted text-center mb-8 prose-relaxed">
+        <p className="text-ink-muted dark:text-ink-dark text-center mb-8 prose-relaxed">
           Pratique o que aprendeu com desafios guiados por níveis.
         </p>
 

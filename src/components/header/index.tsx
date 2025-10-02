@@ -18,7 +18,7 @@ export default function Header() {
   const close = () => setOpen(false);
 
   return (
-    <header className="bg-surface/80 backdrop-blur supports-[backdrop-filter]:bg-surface/70 border-b border-surface-subtle sticky top-0 z-40">
+    <header className="bg-surface/80 dark:bg-surface-darkAlt backdrop-blur supports-[backdrop-filter]:bg-surface/70 border-b border-surface-subtle  dark:border-surface-dark sticky top-0 z-40">
       <nav className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
         <Link href="/" className="text-2xl font-extrabold text-brand tracking-tight">
           LellyCodeLab
@@ -30,7 +30,7 @@ export default function Header() {
             <li key={link.href}>
               <Link
                 href={link.href}
-                className="text-ink-muted hover:text-brand transition-colors focus-soft rounded-md px-1 py-1"
+                className="text-ink-muted dark:text-ink-dark dark:hover:text-brand hover:text-brand transition-colors focus-soft rounded-md px-1 py-1"
               >
                 {link.label}
               </Link>
@@ -64,15 +64,15 @@ export default function Header() {
       {/* Menu mobile */}
       <div
         id="mobile-menu"
-        className={`md:hidden overflow-hidden border-t border-surface-subtle transition-[max-height,opacity] duration-200 ${open ? "max-h-64 opacity-100" : "max-h-0 opacity-0"}`}
+        className={`md:hidden overflow-hidden border-t border-surface-subtle dark:border-transparent transition-[max-height,opacity] duration-200 ${open ? "max-h-64 opacity-100" : "max-h-0 opacity-0"}`}
       >
-        <ul className="px-6 py-3 space-y-2 bg-surface-alt">
+        <ul className="px-6 py-3 space-y-2 bg-surface-alt dark:bg-surface-dark">
           {links.map((link) => (
             <li key={link.href}>
               <Link
                 href={link.href}
                 onClick={close}
-                className="block rounded-md px-3 py-2 text-ink hover:text-brand hover:bg-surface-subtle focus-soft"
+                className="block rounded-md px-3 py-2 text-ink dark:text-ink-dark hover:text-brand hover:bg-surface-subtle dark:hover:bg-surface-darkAlt focus-soft"
               >
                 {link.label}
               </Link>
