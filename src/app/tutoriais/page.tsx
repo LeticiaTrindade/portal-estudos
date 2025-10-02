@@ -139,12 +139,12 @@ export default function TutoriaisPage() {
       <Sidebar onSearch={handleSearch} />
 
       <div className="mx-auto">
-        <h1 className="text-4xl md:text-5xl font-extrabold text-brand tracking-tight text-center mb-6 pt-8">
+        <h1 className=" text-4xl md:text-5xl font-extrabold text-brand tracking-tight text-center mb-6 pt-8">
           Tutoriais
         </h1>
 
         {/* Filtro/descrição opcional */}
-        <p className="text-ink-muted text-center mb-8 prose-relaxed">
+        <p className="text-ink-muted text-center mb-8 prose-relaxed dark:text-ink-dark">
           Explore conteúdos do nível iniciante ao avançado no seu ritmo.
         </p>
 

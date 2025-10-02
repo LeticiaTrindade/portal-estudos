@@ -8,6 +8,14 @@ body{
 
 :root {
   --ring: rgba(232,93,136,0.35);
+  --badge-iniciante-bg: #E7F7F1;
+  --badge-iniciante-fg: #0EA47A;
+
+  --badge-intermediario-bg: #E9F0FB;
+  --badge-intermediario-fg: #6E8ECF; /* support.blue */
+
+  --badge-avancado-bg: #FDECF1;
+  --badge-avancado-fg: #C84B74; /* brand.strong */
 }
 .focus-soft:focus-visible {
   outline: none;
@@ -17,4 +25,14 @@ body{
 }
 .prose-relaxed {
   line-height: 1.7;
+}
+.dark {
+  --badge-iniciante-bg: #0F2B24;   /* verde escuro coerente */
+  --badge-iniciante-fg: #23C79A;   /* eleva contraste no dark */
+
+  --badge-intermediario-bg: #0F1A2E; /* azul carvão */
+  --badge-intermediario-fg: #8EA9E8; /* azul mais claro p/ legibilidade */
+
+  --badge-avancado-bg: #2A0F1A;    /* berry escuro */
+  --badge-avancado-fg: #F7A1BD;    /* brand.soft como texto */
 }
