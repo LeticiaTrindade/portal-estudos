@@ -1,7 +1,10 @@
 export default function Home() {
   return (
     <>
-      <section className="flex flex-col items-center justify-center min-h-[68vh] text-center px-6 bg-surface dark:bg-surface-darkAlt hero-warm">
+      <section
+        className="overflow-hidden flex flex-col items-center justify-center min-h-[68vh] text-center px-6 hero-warm
+      "
+      >
         <h1 className="text-4xl md:text-5xl font-extrabold text-brand dark:text-brand-soft mb-3 tracking-tight">
           Bem-vindo ao Portal de Estudos
         </h1>
@@ -32,23 +35,31 @@ export default function Home() {
         <div className="grid md:grid-cols-3 gap-6">
           <a href="/tutoriais" className="group">
             <div className="bg-surface-alt dark:bg-surface-darkAlt rounded-xl p-6 shadow-card group-hover:shadow-cardHover transition">
-              <h3 className="text-brand dark:text-brand-soft font-bold mb-2">Tutoriais</h3>
+              <h3 className="text-brand dark:text-brand-soft font-bold mb-2">
+                Tutoriais
+              </h3>
               <p className="text-ink-muted dark:text-ink-dark">
-                Aulas passo a passo para iniciantes em programação, com exemplos claros.
+                Aulas passo a passo para iniciantes em programação, com exemplos
+                claros.
               </p>
             </div>
           </a>
           <a href="/exemplos" className="group">
             <div className="bg-surface-alt dark:bg-surface-darkAlt rounded-xl p-6 shadow-card group-hover:shadow-cardHover transition">
-              <h3 className="text-brand dark:text-brand-soft font-bold mb-2">Exemplos</h3>
+              <h3 className="text-brand dark:text-brand-soft font-bold mb-2">
+                Exemplos
+              </h3>
               <p className="text-ink-muted dark:text-ink-dark">
-                Trechos de código e demonstrações práticas para aprendizado rápido.
+                Trechos de código e demonstrações práticas para aprendizado
+                rápido.
               </p>
             </div>
           </a>
           <a href="/exercicios" className="group">
             <div className="bg-surface-alt dark:bg-surface-darkAlt rounded-xl p-6 shadow-card group-hover:shadow-cardHover transition">
-              <h3 className="text-brand dark:text-brand-soft font-bold mb-2">Exercícios</h3>
+              <h3 className="text-brand dark:text-brand-soft font-bold mb-2">
+                Exercícios
+              </h3>
               <p className="text-ink-muted dark:text-ink-dark">
                 Quizzes e exercícios interativos para fixar o conteúdo estudado.
               </p>

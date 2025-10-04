@@ -74,7 +74,7 @@ export default function ExerciciosPage() {
   };
 
   return (
-    <section className="max-w-6xl mx-auto px-6 py-12">
+    <section className="max-w-6xl mx-auto px-6 py-12 ">
       <Sidebar onSearch={handleSearch} />
 
       <div className="mx-auto">

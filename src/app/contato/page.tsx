@@ -55,7 +55,7 @@ export default function ContatoPage() {
   };
 
   return (
-    <section className="max-w-5xl mx-auto px-6 py-12">
+    <section className="max-w-6xl mx-auto px-6 py-12">
       <header className="text-center mb-10">
         <h1 className="text-4xl md:text-5xl font-extrabold text-brand dark:text-brand-soft tracking-tight mb-2">
           Contato
