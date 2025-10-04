@@ -3,7 +3,7 @@ export default function SobrePage() {
     <section className="max-w-6xl mx-auto px-6 py-12">
       {/* Hero */}
       <header className="text-center mb-12">
-        <h1 className="text-4xl md:text-5xl font-extrabold text-brand tracking-tight mb-3">
+        <h1 className="text-4xl md:text-5xl font-extrabold text-brand dark:text-brand-soft tracking-tight mb-3">
           Sobre o LellyCodeLab
         </h1>
         <p className="text-ink-muted dark:text-ink-dark prose-relaxed max-w-3xl mx-auto">
@@ -32,15 +32,15 @@ export default function SobrePage() {
         <h2 className="text-2xl font-semibold text-ink dark:text-ink-dark mb-4">Valores</h2>
         <ul className="grid md:grid-cols-3 gap-4">
           <li className="bg-surface-alt dark:bg-surface-darkAlt dark:border-transparent border border-surface-subtle rounded-xl p-5 shadow-card">
-            <h3 className="font-semibold text-brand mb-1">Clareza</h3>
+            <h3 className="font-semibold text-brand dark:text-brand-soft mb-1">Clareza</h3>
             <p className="text-ink-muted dark:text-ink-dark">Explicações objetivas, passo a passo e sem jargões desnecessários.</p>
           </li>
           <li className="bg-surface-alt dark:bg-surface-darkAlt dark:border-transparent border border-surface-subtle rounded-xl p-5 shadow-card">
-            <h3 className="font-semibold text-brand mb-1">Acolhimento</h3>
+            <h3 className="font-semibold text-brand dark:text-brand-soft mb-1">Acolhimento</h3>
             <p className="text-ink-muted dark:text-ink-dark">Visual suave, linguagem inclusiva e foco na experiência de quem está começando.</p>
           </li>
           <li className="bg-surface-alt dark:bg-surface-darkAlt dark:border-transparent border border-surface-subtle rounded-xl p-5 shadow-card">
-            <h3 className="font-semibold text-brand mb-1">Prática</h3>
+            <h3 className="font-semibold text-brand dark:text-brand-soft mb-1">Prática</h3>
             <p className="text-ink-muted dark:text-ink-dark">Tutoriais com exemplos e exercícios para aprender fazendo.</p>
           </li>
         </ul>
@@ -81,7 +81,7 @@ export default function SobrePage() {
       <div className="text-center">
         <a
           href="/tutoriais"
-          className="inline-flex items-center justify-center px-5 py-3 rounded-xl bg-brand text-white shadow-card hover:shadow-cardHover transition focus-soft"
+          className="inline-flex items-center justify-center px-5 py-3 rounded-xl bg-brand dark:bg-brand-soft text-white shadow-card hover:shadow-cardHover transition focus-soft"
         >
           Começar a aprender
         </a>

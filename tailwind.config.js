@@ -7,8 +7,8 @@ module.exports = {
     extend: {
       colors: {
         brand: {
-          DEFAULT: "#E85D88",
-          soft: "#F7A1BD",
+          DEFAULT: "#e85d88",
+          soft: "#F77DA4",
           strong: "#C84B74",
         },
         surface: {
