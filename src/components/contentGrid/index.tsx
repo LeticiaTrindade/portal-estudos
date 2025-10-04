@@ -34,7 +34,7 @@ export default function ContentGrid({ items }: ContentGridProps) {
           href={item.link ?? "#"}
           target={item.link ? "_blank" : undefined}
           rel={item.link ? "noopener noreferrer" : undefined}
-          className="group block bg-surface-alt dark:bg-surface-darkAlt dark:border-transparent border border-surface-subtle rounded-xl p-6 shadow-card hover:shadow-cardHover transition focus-soft"
+          className="group block bg-surface-alt dark:bg-surface-dark dark:border-transparent border border-surface-subtle rounded-xl p-6 shadow-card hover:shadow-cardHover transition focus-soft"
         >
           <div className="flex flex-col justify-between h-full">
             <div>

@@ -34,7 +34,7 @@ export default function Home() {
         </h2>
         <div className="grid md:grid-cols-3 gap-6">
           <a href="/tutoriais" className="group">
-            <div className="bg-surface-alt dark:bg-surface-darkAlt rounded-xl p-6 shadow-card group-hover:shadow-cardHover transition">
+            <div className="bg-surface-alt dark:bg-surface-dark rounded-xl p-6 shadow-card group-hover:shadow-cardHover transition">
               <h3 className="text-brand dark:text-brand-soft font-bold mb-2">
                 Tutoriais
               </h3>
@@ -45,7 +45,7 @@ export default function Home() {
             </div>
           </a>
           <a href="/exemplos" className="group">
-            <div className="bg-surface-alt dark:bg-surface-darkAlt rounded-xl p-6 shadow-card group-hover:shadow-cardHover transition">
+            <div className="bg-surface-alt dark:bg-surface-dark rounded-xl p-6 shadow-card group-hover:shadow-cardHover transition">
               <h3 className="text-brand dark:text-brand-soft font-bold mb-2">
                 Exemplos
               </h3>
@@ -56,7 +56,7 @@ export default function Home() {
             </div>
           </a>
           <a href="/exercicios" className="group">
-            <div className="bg-surface-alt dark:bg-surface-darkAlt rounded-xl p-6 shadow-card group-hover:shadow-cardHover transition">
+            <div className="bg-surface-alt dark:bg-surface-dark rounded-xl p-6 shadow-card group-hover:shadow-cardHover transition">
               <h3 className="text-brand dark:text-brand-soft font-bold mb-2">
                 Exercícios
               </h3>

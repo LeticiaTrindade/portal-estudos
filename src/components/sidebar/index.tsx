@@ -16,7 +16,7 @@ export default function Sidebar({ onSearch }: SidebarProps) {
   };
 
   return (
-    <aside className="bg-surface-alt dark:bg-surface-darkAlt dark:border-transparent p-6 rounded-xl shadow-card h-fit mr-0 md:mr-6 border border-surface-subtle">
+    <aside className="bg-surface-alt dark:bg-surface-dark dark:border-transparent p-6 rounded-xl shadow-card h-fit mr-0 md:mr-6 border border-surface-subtle">
       <h2 className="text-xl font-bold text-brand dark:text-brand-soft mb-4">Pesquisar</h2>
 
       <label htmlFor="search" className="sr-only">
@@ -44,7 +44,7 @@ export default function Sidebar({ onSearch }: SidebarProps) {
           placeholder="Buscar..."
           value={search}
           onChange={handleChange}
-          className="w-full pl-10 pr-3 py-2 rounded-md border border-surface-subtle dark:bg-surface-dark dark:border-transparent bg-white text-ink placeholder:text-ink-muted focus-soft"
+          className="w-full pl-10 pr-3 py-2 rounded-md border border-surface-subtle dark:bg-surface-darkAlt dark:border-transparent bg-white text-ink placeholder:text-ink-muted focus-soft"
         />
       </div>
 

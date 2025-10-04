@@ -1,7 +1,7 @@
 // components/Footer.tsx
 export default function Footer() {
   return (
-    <footer className="bg-surface-subtle dark:bg-surface-darkAlt text-ink py-8 mt-12 border-t border-surface-subtle dark:border-surface-dark">
+    <footer className="bg-surface-subtle dark:bg-surface-dark text-ink py-8 mt-12 border-t border-surface-subtle dark:border-surface-dark">
       <div className="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-4">
         <p className="text-sm text-ink-muted dark:text-ink-dark">
           &copy; {new Date().getFullYear()} LellyCodeLab. Todos os direitos reservados.
