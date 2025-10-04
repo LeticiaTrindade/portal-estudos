@@ -1,7 +1,7 @@
 // components/Footer.tsx
 export default function Footer() {
   return (
-    <footer className="bg-surface-subtle dark:bg-surface-darkAlt text-ink py-8 mt-12 border-t border-surface-subtle dark:border-surface-dark">
+    <footer className="bg-surface-subtle dark:bg-surface-dark text-ink py-8 mt-12 border-t border-surface-subtle dark:border-surface-dark">
       <div className="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-4">
         <p className="text-sm text-ink-muted dark:text-ink-dark">
           &copy; {new Date().getFullYear()} LellyCodeLab. Todos os direitos reservados.
@@ -11,7 +11,7 @@ export default function Footer() {
             href="https://github.com/leticiatrindade"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-brand hover:opacity-90 transition-opacity focus-soft rounded-md px-1 py-1"
+            className="text-brand dark:text-brand-soft hover:opacity-90 transition-opacity focus-soft rounded-md px-1 py-1"
           >
             GitHub
           </a>
@@ -19,7 +19,7 @@ export default function Footer() {
             href="https://linkedin.com/in/leticiatrindadett"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-brand hover:opacity-90 transition-opacity focus-soft rounded-md px-1 py-1"
+            className="text-brand dark:text-brand-soft hover:opacity-90 transition-opacity focus-soft rounded-md px-1 py-1"
           >
             LinkedIn
           </a>

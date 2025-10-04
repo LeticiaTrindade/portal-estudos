@@ -55,9 +55,9 @@ export default function ContatoPage() {
   };
 
   return (
-    <section className="max-w-5xl mx-auto px-6 py-12">
+    <section className="max-w-6xl mx-auto px-6 py-12">
       <header className="text-center mb-10">
-        <h1 className="text-4xl md:text-5xl font-extrabold text-brand tracking-tight mb-2">
+        <h1 className="text-4xl md:text-5xl font-extrabold text-brand dark:text-brand-soft tracking-tight mb-2">
           Contato
         </h1>
         <p className="text-ink-muted prose-relaxed text-center mb-8 dark:text-ink-dark">
@@ -72,7 +72,7 @@ export default function ContatoPage() {
             <h2 className="text-lg font-semibold text-ink dark:text-ink-dark mb-1">E-mail</h2>
             <a
               href="mailto:leticia.trindade@ufrpe.br"
-              className="text-brand hover:opacity-90 focus-soft rounded-md px-1 py-1 inline-block"
+              className="text-brand dark:text-brand-soft hover:opacity-90 focus-soft rounded-md px-1 py-1 inline-block"
             >
               leticia.trindade@ufrpe.br
             </a>
@@ -84,7 +84,7 @@ export default function ContatoPage() {
               href="https://github.com/leticiatrindade"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-brand hover:opacity-90 focus-soft rounded-md px-1 py-1 inline-block"
+              className="text-brand dark:text-brand-soft hover:opacity-90 focus-soft rounded-md px-1 py-1 inline-block"
             >
               github.com/leticiatrindade
             </a>
@@ -96,7 +96,7 @@ export default function ContatoPage() {
               href="https://linkedin.com/in/leticiatrindadett"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-brand hover:opacity-90 focus-soft rounded-md px-1 py-1 inline-block"
+              className="text-brand dark:text-brand-soft hover:opacity-90 focus-soft rounded-md px-1 py-1 inline-block"
             >
               linkedin.com/in/leticiatrindadett
             </a>
@@ -170,7 +170,7 @@ export default function ContatoPage() {
             <button
               type="submit"
               disabled={status === "sending"}
-              className="inline-flex items-center justify-center px-5 py-2.5 rounded-xl bg-brand text-white shadow-card hover:shadow-cardHover transition disabled:opacity-60 focus-soft"
+              className="inline-flex items-center justify-center px-5 py-2.5 rounded-xl bg-brand dark:bg-brand-soft text-white shadow-card hover:shadow-cardHover transition disabled:opacity-60 focus-soft"
             >
               {status === "sending" ? "Enviando..." : "Enviar mensagem"}
             </button>

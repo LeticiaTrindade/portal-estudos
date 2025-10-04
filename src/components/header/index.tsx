@@ -18,9 +18,9 @@ export default function Header() {
   const close = () => setOpen(false);
 
   return (
-    <header className="bg-surface/80 dark:bg-surface-darkAlt backdrop-blur supports-[backdrop-filter]:bg-surface/70 border-b border-surface-subtle  dark:border-surface-dark sticky top-0 z-40">
+    <header className="bg-surface/80 dark:bg-surface-dark/80 backdrop-blur supports-[backdrop-filter]:bg-surface/70 border-b border-surface-subtle  dark:border-surface-dark sticky top-0 z-40">
       <nav className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-        <Link href="/" className="text-2xl font-extrabold text-brand tracking-tight">
+        <Link href="/" className="text-2xl font-extrabold text-brand dark:text-brand-soft tracking-tight">
           LellyCodeLab
         </Link>
 

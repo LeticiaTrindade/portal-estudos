@@ -74,11 +74,11 @@ export default function ExerciciosPage() {
   };
 
   return (
-    <section className="max-w-6xl mx-auto px-6 py-12">
+    <section className="max-w-6xl mx-auto px-6 py-12 ">
       <Sidebar onSearch={handleSearch} />
 
       <div className="mx-auto">
-        <h1 className="text-4xl md:text-5xl font-extrabold text-brand tracking-tight text-center mb-6 pt-8">
+        <h1 className="text-4xl md:text-5xl font-extrabold text-brand dark:text-brand-soft tracking-tight text-center mb-6 pt-8">
           Exercícios
         </h1>
         <p className="text-ink-muted dark:text-ink-dark text-center mb-8 prose-relaxed">

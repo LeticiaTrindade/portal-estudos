@@ -4,7 +4,7 @@ import CodeBlock from "@/components/codeBlock/index";
 export default function Tutorial1() {
   return (
     <article className="max-w-3xl mx-auto px-6 py-12 text-ink prose-relaxed">
-      <h1 className="text-4xl md:text-5xl font-extrabold text-brand mb-2 tracking-tight">
+      <h1 className="text-4xl md:text-5xl font-extrabold text-brand dark:text-brand-soft mb-2 tracking-tight">
         📘 Introdução ao HTML
       </h1>
 
@@ -13,7 +13,7 @@ export default function Tutorial1() {
       </p>
 
       <section className="mb-8">
-        <h2 className="text-2xl font-semibold text-brand mb-3">🎯 Objetivo</h2>
+        <h2 className="text-2xl font-semibold text-brand dark:text-brand-soft mb-3">🎯 Objetivo</h2>
         <p className="dark:text-ink-dark">
           Aprender os fundamentos do HTML (HyperText Markup Language) e criar
           sua primeira página web.
@@ -21,7 +21,7 @@ export default function Tutorial1() {
       </section>
 
       <section className="mb-8">
-        <h2 className="text-2xl font-semibold text-brand mb-3">📖 O que é HTML?</h2>
+        <h2 className="text-2xl font-semibold text-brand dark:text-brand-soft mb-3">📖 O que é HTML?</h2>
         <p className="mb-3 dark:text-ink-dark">
           O HTML é a linguagem padrão usada para estruturar páginas da web. Ele
           define o que aparece na tela, como textos, imagens, links, listas e
@@ -40,7 +40,7 @@ export default function Tutorial1() {
       </section>
 
       <section className="mb-8">
-        <h2 className="text-2xl font-semibold text-brand mb-3">
+        <h2 className="text-2xl font-semibold text-brand dark:text-brand-soft mb-3">
           🏗 Estrutura básica de uma página HTML
         </h2>
 
@@ -61,18 +61,18 @@ export default function Tutorial1() {
 
         <h3 className="text-lg font-semibold mt-4 mb-2 text-ink dark:text-ink-dark">🔍 Explicação:</h3>
         <ul className="list-disc list-inside space-y-1 text-ink">
-          <li className="dark:text-ink-dark"><code className="text-brand" >&lt;!DOCTYPE html&gt;</code> → Informa ao navegador que é um documento HTML5.</li>
-          <li className="dark:text-ink-dark"><code className="text-brand" >&lt;html&gt;</code> → A raiz do documento.</li>
-          <li className="dark:text-ink-dark"><code className="text-brand" >&lt;head&gt;</code> → Configurações invisíveis da página.</li>
-          <li className="dark:text-ink-dark"><code className="text-brand" >&lt;title&gt;</code> → Nome que aparece na aba do navegador.</li>
-          <li className="dark:text-ink-dark"><code className="text-brand" >&lt;body&gt;</code> → Onde colocamos o conteúdo visível.</li>
-          <li className="dark:text-ink-dark"><code className="text-brand" >&lt;h1&gt;</code> → Título principal.</li>
-          <li className="dark:text-ink-dark"><code className="text-brand" >&lt;p&gt;</code> → Parágrafo de texto.</li>
+          <li className="dark:text-ink-dark"><code className="text-brand dark:text-brand-soft" >&lt;!DOCTYPE html&gt;</code> → Informa ao navegador que é um documento HTML5.</li>
+          <li className="dark:text-ink-dark"><code className="text-brand dark:text-brand-soft" >&lt;html&gt;</code> → A raiz do documento.</li>
+          <li className="dark:text-ink-dark"><code className="text-brand dark:text-brand-soft" >&lt;head&gt;</code> → Configurações invisíveis da página.</li>
+          <li className="dark:text-ink-dark"><code className="text-brand dark:text-brand-soft" >&lt;title&gt;</code> → Nome que aparece na aba do navegador.</li>
+          <li className="dark:text-ink-dark"><code className="text-brand dark:text-brand-soft" >&lt;body&gt;</code> → Onde colocamos o conteúdo visível.</li>
+          <li className="dark:text-ink-dark"><code className="text-brand dark:text-brand-soft" >&lt;h1&gt;</code> → Título principal.</li>
+          <li className="dark:text-ink-dark"><code className="text-brand dark:text-brand-soft" >&lt;p&gt;</code> → Parágrafo de texto.</li>
         </ul>
       </section>
 
       <section className="mb-8">
-        <h2 className="text-2xl font-semibold text-brand mb-3">📌 Principais Tags Essenciais</h2>
+        <h2 className="text-2xl font-semibold text-brand dark:text-brand-soft mb-3">📌 Principais Tags Essenciais</h2>
         <div className="overflow-x-auto rounded-xl border border-surface-subtle">
           <table className="w-full text-sm">
             <thead>
@@ -109,7 +109,7 @@ export default function Tutorial1() {
       </section>
 
       <section className="mb-8">
-        <h2 className="text-2xl font-semibold text-brand mb-3">🖥 Exemplo Prático</h2>
+        <h2 className="text-2xl font-semibold text-brand dark:text-brand-soft mb-3">🖥 Exemplo Prático</h2>
         <CodeBlock>
 {`<!DOCTYPE html>
 <html>
@@ -127,9 +127,9 @@ export default function Tutorial1() {
       </section>
 
       <section>
-        <h2 className="text-2xl font-semibold text-brand mb-3">📝 Exercício Prático</h2>
+        <h2 className="text-2xl font-semibold text-brand dark:text-brand-soft mb-3">📝 Exercício Prático</h2>
         <ul className="list-disc list-inside space-y-2 text-ink">
-          <li className="dark:text-ink-dark">Crie um arquivo <code className="text-brand">index.html</code>.</li>
+          <li className="dark:text-ink-dark">Crie um arquivo <code className="text-brand dark:text-brand-soft">index.html</code>.</li>
           <li className="dark:text-ink-dark">Adicione um título &lt;h1&gt; com seu nome.</li>
           <li className="dark:text-ink-dark">Adicione um parágrafo &lt;p&gt; contando algo sobre você.</li>
           <li className="dark:text-ink-dark">Adicione uma imagem &lt;img&gt; (pode ser da internet).</li>
