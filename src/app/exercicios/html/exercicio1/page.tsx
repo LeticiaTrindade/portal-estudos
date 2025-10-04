@@ -111,7 +111,7 @@ export default function Exercicio1Page() {
 
   return (
     <section className="max-w-6xl mx-auto px-6 py-12">
-      <h1 className="text-3xl md:text-4xl font-extrabold text-brand mb-8 text-center tracking-tight">
+      <h1 className="text-3xl md:text-4xl font-extrabold text-brand dark:text-brand-soft mb-8 text-center tracking-tight">
         Exercícios: Estrutura básica do HTML
       </h1>
 
@@ -132,7 +132,7 @@ export default function Exercicio1Page() {
             {/* Botão de solução com foco visível suave */}
             <button
               onClick={() => toggleSolution(ex.id)}
-              className="mt-4 inline-flex items-center gap-2 text-sm text-brand hover:opacity-90 transition focus-soft rounded-md px-1 py-1"
+              className="mt-4 inline-flex items-center gap-2 text-sm text-brand dark:text-brand-soft hover:opacity-90 transition focus-soft rounded-md px-1 py-1"
             >
               {openSolutions.includes(ex.id) ? (
                 <>

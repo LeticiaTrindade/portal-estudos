@@ -17,7 +17,7 @@ export default function Sidebar({ onSearch }: SidebarProps) {
 
   return (
     <aside className="bg-surface-alt dark:bg-surface-darkAlt dark:border-transparent p-6 rounded-xl shadow-card h-fit mr-0 md:mr-6 border border-surface-subtle">
-      <h2 className="text-xl font-bold text-brand mb-4">Pesquisar</h2>
+      <h2 className="text-xl font-bold text-brand dark:text-brand-soft mb-4">Pesquisar</h2>
 
       <label htmlFor="search" className="sr-only">
         Buscar conteúdo

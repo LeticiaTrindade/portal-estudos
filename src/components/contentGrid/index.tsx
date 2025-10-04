@@ -38,7 +38,7 @@ export default function ContentGrid({ items }: ContentGridProps) {
         >
           <div className="flex flex-col justify-between h-full">
             <div>
-              <h2 className="text-brand font-semibold text-lg mb-2 group-hover:opacity-90 transition-opacity">
+              <h2 className="text-brand dark:text-brand-soft font-semibold text-lg mb-2 group-hover:opacity-90 transition-opacity">
                 {item.title}
               </h2>
               <p className="dark:text-ink-dark text-ink-muted text-sm mb-4">

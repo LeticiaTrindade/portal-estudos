@@ -11,7 +11,7 @@ export default function Footer() {
             href="https://github.com/leticiatrindade"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-brand hover:opacity-90 transition-opacity focus-soft rounded-md px-1 py-1"
+            className="text-brand dark:text-brand-soft hover:opacity-90 transition-opacity focus-soft rounded-md px-1 py-1"
           >
             GitHub
           </a>
@@ -19,7 +19,7 @@ export default function Footer() {
             href="https://linkedin.com/in/leticiatrindadett"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-brand hover:opacity-90 transition-opacity focus-soft rounded-md px-1 py-1"
+            className="text-brand dark:text-brand-soft hover:opacity-90 transition-opacity focus-soft rounded-md px-1 py-1"
           >
             LinkedIn
           </a>
