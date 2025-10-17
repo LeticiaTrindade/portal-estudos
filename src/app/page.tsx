@@ -32,7 +32,7 @@ export default function Home() {
         <h2 className="text-2xl font-semibold text-ink dark:text-[#E6EDF7] mb-6">
           O que você encontrará:
         </h2>
-        <div className="grid md:grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-2 gap-6 mx-auto w-full">
           <a href="/tutoriais" className="group">
             <div className="bg-surface-alt dark:bg-surface-dark rounded-xl p-6 shadow-card group-hover:shadow-cardHover transition">
               <h3 className="text-brand dark:text-brand-soft font-bold mb-2">
@@ -44,19 +44,9 @@ export default function Home() {
               </p>
             </div>
           </a>
-          <a href="/exemplos" className="group">
-            <div className="bg-surface-alt dark:bg-surface-dark rounded-xl p-6 shadow-card group-hover:shadow-cardHover transition">
-              <h3 className="text-brand dark:text-brand-soft font-bold mb-2">
-                Exemplos
-              </h3>
-              <p className="text-ink-muted dark:text-ink-dark">
-                Trechos de código e demonstrações práticas para aprendizado
-                rápido.
-              </p>
-            </div>
-          </a>
+          
           <a href="/exercicios" className="group">
-            <div className="bg-surface-alt dark:bg-surface-dark rounded-xl p-6 shadow-card group-hover:shadow-cardHover transition">
+            <div className=" h-full bg-surface-alt dark:bg-surface-dark rounded-xl p-6 shadow-card group-hover:shadow-cardHover transition">
               <h3 className="text-brand dark:text-brand-soft font-bold mb-2">
                 Exercícios
               </h3>
