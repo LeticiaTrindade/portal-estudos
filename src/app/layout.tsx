@@ -8,6 +8,7 @@ import { ThemeToggle } from "@/components/themeToggle/ThemeToggle";
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
   <html lang="pt-BR" className="h-full" suppressHydrationWarning>
+  <title>LellyCodeLab</title>
   <body className="min-h-screen bg-surface dark:bg-surface-darkAlt text-ink antialiased
   bg-[url('/assets/background.svg')] bg-center bg-no-repeat bg-cover bg-fixed
   dark:bg-[url('/assets/background-dark.svg')]">
